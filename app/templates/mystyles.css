@@ -1,0 +1,10 @@
+.glyphicon {
+    font-size: 32px;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 110px;
+    height: 125px;
+    padding-top: 10;
+}
