@@ -1,0 +1,72 @@
+.glyphicon {
+    font-size: 32px;
+}
+
+.navbar {
+  min-height: 80px;
+}
+
+.navbar-brand, {
+    line-height: 80px;
+    height: 80px;
+    padding-top: 0;
+}
+
+.logo {
+  width:110px;
+  height:80px;
+  margin-top: 0;
+  position: absolute;
+  top:0px;
+  left:10px;
+}
+
+.search-bar {
+  margin-top: 10px;
+  margin-left: 120px;
+}
+
+.nav-icons {
+  margin-top: 5px;
+}
+
+/*.form-group {
+  display: inline-block
+}*/
+
+.media-body{
+    vertical-align: middle !important;
+}
+
+/*#search {
+  display: inline-block
+}*/
+
+/* CSS Tests */
+/*  .nav-tabs li a {
+      color: #777;
+ }*/
+  .navbar {
+      /*font-family: Montserrat, sans-serif;*/
+      margin-bottom: 0;
+      background-color: #62A8E5;
+      border: 0;
+      /*font-size: 11px !important;*/
+      /*letter-spacing: 4px;*/
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #262424 !important;
+  }
+
+  /*Changes color of button text and glyphicons*/
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+/*  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #F66141 !important;
+  }*/
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
