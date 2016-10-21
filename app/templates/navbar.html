@@ -14,7 +14,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="../static/css/style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../static/css/navbar.css" media="screen" />
 
 
 </head>
@@ -32,67 +32,37 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-        <img src="./logo/logo.png" class = "img.responsive" alt="WTF@CU" style="width:110px;height:80px;">
+        <img src="../static/logo/logo.png" class = "img.responsive logo" alt="WTF@CU">
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-      <ul class="nav navbar-nav">
 
-        <!-- Link Button 1 -->
-        <li class><a href="#">Link <span class="sr-only">(current)</span></a></li>
-
-        <!-- Link Button 2 -->
-        <li><a href="#">Link</a></li>
-
-        <!-- Dropdown Left -->
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
 
 
       <form class="navbar-form navbar-left">
 
-        <div class="form-group form-inline">
+        <div class="form-group form-inline search-bar">
           <input type="text" class="form-control" placeholder="Search">
+          <button type="submit" class="btn btn-default">Submit</button>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        
       </form>
 
 
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right nav-icons">
 
-
+  
         <li><a href="#"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
         <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
-        <!-- Default Dropdown Menu -->
-        <!-- <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li> -->
+        <li><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></li>
 
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
-  </div><!-- /.container-fluid -->
+</div><!-- /.container-fluid -->
 </nav>
 </body>
 </html>
