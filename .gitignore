@@ -1,14 +1,7 @@
+.vagrant
 
-_Store
-*.pyc
-*.pyo
-env
-env*
-dist
-build
-*.egg
-*.egg-info
-_mailinglist
-.tox
-.cache/
-.idea/
+.coverage
+.cache
+
+__pycache__
+**/__pycache__
