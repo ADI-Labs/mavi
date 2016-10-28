@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>{% block title%} {% endblock %}</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="footer, address, phone, icons" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/css/navbar.css" media="screen" />
+  <link rel="stylesheet" href="../static/css/footer.css">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+
+
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="../static/logo/logo.png" class = "img.responsive logo" alt="WTF@CU">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+
+
+      <form class="navbar-form navbar-left">
+
+        <div class="form-group form-inline search-bar">
+          <input type="text" class="form-control" placeholder="Search">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+        
+      </form>
+
+
+      <ul class="nav navbar-nav navbar-right nav-icons">
+
+  
+        <li><a href="#"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</div><!-- /.container-fluid -->
+</nav>
+
+{% block style %} {% endblock %}
+{% block content %} {% endblock %}
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <img src="../static/logo/logoBlueWhite.png" class = "img.responsive logo-footer" alt="WTF@CU">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About Us</a>
+          ·
+          <a href="#">FAQ</a>
+          ·
+          <a href="#">Contact Us</a>
+        </p>
+
+        <p class="footer-company-name">WTFColumbia &copy; 2016</p>
+      </div>
+
+      <div class="footer-center">
+
+
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>619 W. 113 Street</span> New York City, USA</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1 (917) 863-3456</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:wtfcolumbia-mavic@gmail.com">WTFColumbia-Mavic@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Our mission is to make sure the students have unfaltering access to the facilities they paid through their nose for.
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+</body>
+</html>

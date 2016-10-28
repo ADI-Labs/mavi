@@ -269,5 +269,14 @@ footer{
 
 }
 
+/* Custom CSS */
+
+.logo-footer {
+  width:160px;
+  height:116px;
+  position: absolute;
+  margin-left: 95px;
+}
+
 
 
