@@ -1,0 +1,27 @@
+userObject = {
+	"name" : "",
+	"nickname" : "",
+	"email" : "",
+	"joinDate" : "",
+	"school" : "",
+	"year" : "",
+	"userID" : ""              Unique UserID. This is used to reference him in posts and comments
+}
+
+commentObject = {
+	"userID" : userObject["userID"],
+	"text" : "",
+	"commentTime" : ""
+}
+
+postObject = {
+	"title" : "",                         (Mandatory)
+	"postContent" : "",                   (Optional)
+	"userID" : userObject["userID"],
+	"upvotes" : int,
+	"downvotes" : int,
+	"comments" : commentObject,
+	"uploadTime" : "",
+	"updateTime" : "",
+	"tag" : ""                Unique PostTag. Refers to posts by each user.
+}

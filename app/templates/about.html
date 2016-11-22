@@ -2,22 +2,18 @@
 
 {% block title %} ABOUT US {% endblock %}
 
-{% block content %}
-
 {% block style %} 
-<link rel="stylesheet" href="../static/css/about.css">
+<link rel="stylesheet" href="../static/css/about.css" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
 {% endblock %}
 
-<div class="w3-white w3-content" id="about-margin">
+{% block content %}
+
+<div class="w3-white w3-content" "about-margin">
 
   <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-    <span class="w3-left w3-padding">SOME NAME</span>
-    <a class="w3-right w3-btn w3-white" onclick="w3_open()">☰</a>
-  </header>
 
   <!-- !PAGE CONTENT! -->
   <div class="w3-main">
@@ -31,9 +27,9 @@
 
         <h4 style="font-size:48px"><b>ABOUT US</b></h4>
 
-        <p><b>WTF is WTFColumbia?</b><p> 
+        <p><b>WTF is WTFColumbia?</b></p> 
           <p>WTFColumbia (What the Fuck Columbia) is a student run web-app dedicated to helping students complain about everything they want to change about Columbia and hopefully enact real change. </p>
-          <p><b>WTF is the point?</b><p>
+          <p><b>WTF is the point?</b></p>
             <p>All the cool kids are doing it! It's obviously fun and interesting to see what your peers hate about this school, but if you need even more incentive, posts that receive enough updates are pushed to ESC and CCSC for actual discussion. </p>
             <hr class="w3-opacity">
           </div>
@@ -42,22 +38,22 @@
         <!-- Photo grid -->
         <div class="w3-row" id= "myGrid" style = "margin-bottom:128px">
           <div class="w3-third">
-            <img src="../static/images/vivekpic.jpg" width="100%" height="400">
+            <img alt="image" src="../static/images/vivekpic.jpg" width="100%" height="400">
             <p> Vivek is a sophomore in SEAS studying Operations Research. asdlfjaldfkjladsf lakdjf dkffsaasdfklldskfjlsjflj;lsksdfjadsklfjsfkjsdlf </p>
-            <img src="../static/images/cesarpic.jpg" width="100%" height="400">
+            <img alt="image" src="../static/images/cesarpic.jpg" width="100%" height="400">
             <p> Cesar is a sophomore in SEAS studying Computer Science. </p>
 
           </div>
 
           <div class="w3-third">
-            <img src="../static/images/myrapic.jpg" width="100%" height="400">
+            <img alt="image" src="../static/images/myrapic.jpg" width="100%" height="400">
             <p> Myra is a sophomore in SEAS studying Computer Science. The worst thing about Columbia in her opinion is Lerner's design. </p>
-            <img src="../static/images/arjunpic.jpg" width="100%" height="400">
+            <img alt="image" src="../static/images/arjunpic.jpg" width="100%" height="400">
             <p> Arjun is a sophomore in SEAS. He was the former ESC class president. </p>
           </div>
 
           <div class="w3-third">
-            <img src="../static/images/ishaanpic.jpg" width="100%" height="400">
+            <img alt="image" src="../static/images/ishaanpic.jpg" width="100%" height="400">
             <p> Ishaan is a sophomore in SEAS majoring in Computer Science and former class treasurer of ESC. He hates _______. </p>
           </div>
 

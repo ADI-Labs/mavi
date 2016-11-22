@@ -1,0 +1,19 @@
+{% block style %}
+	<link rel="stylesheet" href="../static/css/posts.css">
+{% endblock %}
+
+{% for post in posts %}
+	<div class="panel-body">
+		<div class="container-fluid">
+			<p style="border:3px; border-style:dotted; border-color:#69B3E7; padding: 1em;">
+			Title: {{post["title_content"]}}
+			Post: {{post["string_content"]}}
+			Tags: {{post["tag_content"]}}
+			🔥's: {{post["upvote_content"]}}
+			💩's: {{post["downvote_content"]}}
+			</p>
+		</div>
+	</div>
+
+	<br>
+{% endfor %}
