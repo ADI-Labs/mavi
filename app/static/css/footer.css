@@ -1,11 +1,3 @@
-
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
-*{
-	padding:0;
-	margin:0;
-}
-
 html{
 	background-color: #eaf0f2;
 }
@@ -267,6 +259,15 @@ footer{
 		margin-left: 0;
 	}
 
+}
+
+/* Custom CSS */
+
+.logo-footer {
+  width:160px;
+  height:116px;
+  position: absolute;
+  margin-left: 95px;
 }
 
 

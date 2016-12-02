@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+{% extends "layout.html" %}
 
+	{% block title%}WTF@CU{% endblock %}
+
+	{% block style %}
 	<style>
 	.parallax {
 		/* The image used */
@@ -18,33 +22,38 @@
 	}
 	</style>
 
-	<!-- Custom CSS -->
-  	<link rel="stylesheet" type="text/css" href="../static/css/style.css" media="screen" />
+	{% endblock %}
+<!-- </head> -->
 
-	<title>WTF@CU</title>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-
+<!-- <body> -->
+{% block content%}
 	<div class="parallax"></div>
 	<!-- <div class = "scrim"></scrim> -->
 	<div class="panel panel-default">
 		<div class="panel-body">
 			<div class="container">
 				<h2 class=text-center><b>wtfcolumbia.</b></h2>
-				<form>
+				<form method = 'POST' action = '{{url_for('submit_post')}}'>
 					<div class="form-group">
 						<label for="comment">Submit your WTF (what-to-fix) here!</label>
-						<textarea class="form-control" rows="3" id="comment"></textarea>
+						<br/>
+						<!-- <input type = "text" name = "post_content">  -->
+						<label for="title">Title:</label>
+						<textarea class="form-control" rows="1" id="title" name = "title_content"></textarea>
+
+						<label for="msg">Message:</label>
+						<textarea class="form-control" rows="3" id="msg" name = "post_content"></textarea>
+
+						<label for="tag">Tags:</label>
+						<textarea class="form-control" rows="1" id="tag" name = "tag_content"></textarea>
+
+						<label for="upvotes">Test Upvotes:</label>
+						<textarea class="form-control" rows="1" id="upvotes" name = "upvote_content"></textarea>
+
+						<label for="downvotes">Test Downvotes:</label>
+						<textarea class="form-control" rows="1" id="downvotes" name = "downvote_content"></textarea>
+						<!-- <label for="votes">Number of upvotes</label> -->
+						<!-- <input type = "text" name = "votes"> -->
 						<br/>
 						<button type="submit" class="btn btn-primary center-block">Submit</button>
 					</div>
@@ -54,19 +63,12 @@
 	</div>
 
 	<div class="panel panel-default">
-		<div class="panel-body">
-			<div class="container-fluid">
-			</div>
-		</div>
-		<div class="panel-body">
-			<div class="container-fluid">
-			</div>	
-		</div>
-		<div class="panel-body">
-			<div class="container-fluid">
+		<div class = "panel-body">
+			<div class = "container">
+			{% include "posts.html" %}
 			</div>
 		</div>
 	</div>
-
-</body>
+{% endblock %}
+<!-- </body>
 </html>
