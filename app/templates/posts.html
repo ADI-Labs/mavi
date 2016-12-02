@@ -5,13 +5,13 @@
 {% for post in posts %}
 	<div class="panel-body">
 		<div class="container-fluid">
-			<p style="border:3px; border-style:dotted; border-color:#69B3E7; padding: 1em;">
-			Title: {{post["title_content"]}}
-			Post: {{post["string_content"]}}
-			Tags: {{post["tag_content"]}}
-			🔥's: {{post["upvote_content"]}}
-			💩's: {{post["downvote_content"]}}
-			</p>
+			<div class="post-box">
+				<h2><b>Title: {{post["title_content"]}}</b></h2>
+				<p>Post: {{post["string_content"]}}</p>
+				<p>Tags: {{post["tag_content"]}}</p>
+				<p>🔥's: {{post["upvote_content"]}}</p>
+				<p>💩's: {{post["downvote_content"]}}</p>
+			</div>
 		</div>
 	</div>
 
