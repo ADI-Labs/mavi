@@ -1,5 +1,6 @@
-import pyrebase
 from flask import Flask, render_template, request
+import pyrebase
+
 
 app = Flask(__name__)
 
@@ -55,9 +56,13 @@ def submit_post():
         tag_content = request.form["tag_content"]
         upvote_content = request.form["upvote_content"]
         downvote_content = request.form["downvote_content"]
-        d = {"title_content": title_content, "string_content": string_content, "tag_content": tag_content, "upvote_content": upvote_content, "downvote_content": downvote_content}
+        d = {"title_content": title_content, "string_content":
+                string_content, "tag_content": tag_content, "upvote_content":
+                upvote_content, "downvote_content": downvote_content}
         database.child("posts").push(d)
     return render_template("index.html")
+
+
 # @app.route("/post_db", methods=['POST'])
 # def post_df():
 #   if request.method == "POST":
@@ -65,3 +70,10 @@ def submit_post():
 #       votes = request.form["votes"]
 #       dict = {"stringContent": string_content "upvotes":votes}
 #       database.
+@app.route("/upvotes", methods=['GET', 'POST'])
+def upvotes():
+    if request.method == 'POST':
+        json = request.get_json()
+        print(json)
+        print("here")
+        return render_template("index.html")

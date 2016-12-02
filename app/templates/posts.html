@@ -9,11 +9,24 @@
 				<h2><b>Title: {{post["title_content"]}}</b></h2>
 				<p>Post: {{post["string_content"]}}</p>
 				<p>Tags: {{post["tag_content"]}}</p>
-				<p>🔥's: {{post["upvote_content"]}}</p>
-				<p>💩's: {{post["downvote_content"]}}</p>
+				<button id="upvoter" class="submit" onclick="upvotePost({{postId}})")>🔥</button>
+				<p>💩's: {{post["downvote_content"]}}</p></button>
 			</div>
 		</div>
 	</div>
-
 	<br>
+
+<script type="text/javascript">
+    let upvotePost = (postId) => {
+			$.ajax({
+        type: "POST",
+				data: JSON.stringify({'topic': "what"}),
+				contentType: "application/json",
+        url: "/upvotes",
+        success: function(dataString) {
+            console.log("sent");
+        }
+    	});
+		}
+</script>
 {% endfor %}
