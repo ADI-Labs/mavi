@@ -6,11 +6,12 @@
 	<div class="panel-body">
 		<div class="container-fluid">
 			<div class="post-box">
-				<h2><b>Title: {{post["title_content"]}}</b></h2>
-				<p>Post: {{post["string_content"]}}</p>
-				<p>Tags: {{post["tag_content"]}}</p>
+				<h2><b>Title: {{post["title"]}}</b></h2>
+				<p>Post: {{post["post_content"]}}</p>
+				<p>Tags: {{post["tag"]}}</p>
 				<button id="upvoter" class="submit" onclick="upvotePost({{postId}})")>🔥</button>
 				<button id="downvoter" class= "submit" onclick="downvotePost({{postId}}")>💩</button>
+				<p> User ID: {{post["userID"]}} </p>
 			</div>
 		</div>
 	</div>
