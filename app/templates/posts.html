@@ -10,7 +10,7 @@
 				<p>Post: {{post["string_content"]}}</p>
 				<p>Tags: {{post["tag_content"]}}</p>
 				<button id="upvoter" class="submit" onclick="upvotePost({{postId}})")>🔥</button>
-				<p>💩's: {{post["downvote_content"]}}</p></button>
+				<button id="downvoter" class= "submit" onclick="downvotePost({{postId}}")>💩</button>
 			</div>
 		</div>
 	</div>
@@ -28,5 +28,17 @@
         }
     	});
 		}
+	let downvotePost = (postId) => {
+			$.ajax({
+		type: "POST",
+				data: JSON.stringify({'topic': "what"}),
+				contentType: "application/json",
+		url: "/downvotes",
+		success: function(dataString){
+			console.log("sent")
+		}
+		});
+		}
 </script>
+
 {% endfor %}

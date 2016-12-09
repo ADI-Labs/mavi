@@ -1,6 +1,5 @@
-.post-box {
-	border:3px; 
-	border-style:dotted dashed; 
-	border-color:#62A8E5; 
-	padding: 1em;
+h1 {
+	top: 200px;
+	left: 0;
+	width: 100%;
 }

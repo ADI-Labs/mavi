@@ -77,3 +77,11 @@ def upvotes():
         print(json)
         print("here")
         return render_template("index.html")
+
+@app.route("/downvotes", methods=['GET', 'POST'])
+def downvotes():
+    if request.method == 'POST':
+        json = request.get_json()
+        print(json)
+        print("here")
+        return render_template("index.html")

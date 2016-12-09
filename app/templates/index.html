@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
 {% extends "layout.html" %}
 
 	{% block title%}WTF@CU{% endblock %}
@@ -9,17 +8,22 @@
 	<style>
 	.parallax {
 		/* The image used */
-		background-image: url("../static/images/thinking_man.jpg");
+		background-image: 
+			linear-gradient(
+      			rgba(0, 100, 292, 0.2), 
+      			rgba(0, 100, 292, 0.2)
+    		),
+			url("../static/images/thinking_man.jpg");
 
 		/* Set a specific height */
 		min-height: 500px;
+		opacity: 0.8;
 
 		/* Create the parallax scrolling effect */
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-	}
 	</style>
 
 	{% endblock %}
@@ -27,7 +31,9 @@
 
 <!-- <body> -->
 {% block content%}
-	<div class="parallax"></div>
+	<div class="parallax">
+	</div>
+
 	<!-- <div class = "scrim"></scrim> -->
 	<div class="panel panel-default">
 		<div class="panel-body">
